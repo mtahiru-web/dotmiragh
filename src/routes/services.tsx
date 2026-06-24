@@ -1,6 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Layout, PageHero } from "@/components/site/Layout";
 import { Globe2, Sparkles, Server, Wrench, FileSpreadsheet, ArrowRight, Check } from "lucide-react";
+import serviceWebsite from "@/assets/service-website.jpg";
+import serviceDomain from "@/assets/service-domain.jpg";
+import serviceHosting from "@/assets/service-hosting.jpg";
+import serviceMaintenance from "@/assets/service-maintenance.jpg";
+import serviceExcel from "@/assets/service-excel.jpg";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
@@ -23,10 +28,14 @@ const domainRows = [
   { ext: ".store", y1: "GHS 325", y2: "GHS 355", y3: "GHS 395", tag: "Best value" },
 ];
 
-function ServiceCard({ icon: Icon, num, title, children }: { icon: any; num: string; title: string; children: React.ReactNode }) {
+function ServiceCard({ icon: Icon, num, title, image, imageAlt, children }: { icon: any; num: string; title: string; image: string; imageAlt: string; children: React.ReactNode }) {
   return (
-    <section className="rounded-3xl bg-card border border-border p-7 md:p-10 shadow-[var(--shadow-soft)]">
-      <div className="flex items-start gap-5">
+    <section className="overflow-hidden rounded-3xl bg-card border border-border shadow-[var(--shadow-soft)]">
+      <div className="relative aspect-[16/7] w-full overflow-hidden">
+        <img src={image} alt={imageAlt} width={1280} height={768} loading="lazy" className="h-full w-full object-cover" />
+        <div className="absolute inset-0" style={{ background: "linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,0.45) 100%)" }} />
+      </div>
+      <div className="flex items-start gap-5 p-7 md:p-10">
         <div className="hidden sm:flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl text-primary-foreground" style={{ background: "var(--gradient-brand)" }}>
           <Icon className="h-7 w-7" />
         </div>
@@ -46,13 +55,13 @@ function ServicesPage() {
       <PageHero eyebrow="Our Services" title="Everything you need to launch and grow" subtitle="From your first domain to a fully maintained website — we cover it all." />
 
       <div className="mx-auto max-w-5xl px-4 sm:px-6 py-16 md:py-20 space-y-8">
-        <ServiceCard icon={Globe2} num="01" title="Website Creation">
+        <ServiceCard icon={Globe2} num="01" title="Website Creation" image={serviceWebsite} imageAlt="Web designer building a colorful website on a laptop">
           <p>Dotmira GH designs and builds clean, professional, and mobile-friendly websites tailored to each client's business. Whether it is a simple one-page site or a multi-page business website, every build is customised to reflect the client's brand, communicate their services clearly, and attract the right customers.</p>
           <p>The process covers everything from design and layout to content placement and publishing — so the client does not have to worry about a thing.</p>
           <Link to="/contact" className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline">Request a quote <ArrowRight className="h-4 w-4" /></Link>
         </ServiceCard>
 
-        <ServiceCard icon={Sparkles} num="02" title="Domain Registration">
+        <ServiceCard icon={Sparkles} num="02" title="Domain Registration" image={serviceDomain} imageAlt="Glowing connected globe representing internet domains">
           <p>A domain name is a business's unique address on the internet — for example, <span className="text-foreground font-medium">yourbusiness.com</span>. Dotmira GH helps clients choose, register, and manage the right domain name for their business. A good domain name builds credibility, makes a business easier to find online, and gives it a professional identity.</p>
 
           <div className="mt-6 overflow-hidden rounded-2xl border border-border">
@@ -85,7 +94,7 @@ function ServicesPage() {
           <p className="text-xs">All domains include free privacy protection and a free coming-soon page.</p>
         </ServiceCard>
 
-        <ServiceCard icon={Server} num="03" title="Web Hosting">
+        <ServiceCard icon={Server} num="03" title="Web Hosting" image={serviceHosting} imageAlt="Modern server room with warm purple and orange lighting">
           <p>Web hosting is the service that makes a website accessible on the internet. Think of it as renting space on a server where all the website's files, images, and content are stored. Without hosting, a website cannot be seen online. Dotmira GH sets up reliable, fast, and secure hosting for every client's website and handles the technical configuration so the client's site is live and running without any hassle.</p>
           <div className="mt-4 grid sm:grid-cols-2 gap-4">
             <div className="rounded-2xl border border-border p-5 bg-background">
@@ -109,11 +118,11 @@ function ServicesPage() {
           </div>
         </ServiceCard>
 
-        <ServiceCard icon={Wrench} num="04" title="Website Maintenance">
+        <ServiceCard icon={Wrench} num="04" title="Website Maintenance" image={serviceMaintenance} imageAlt="Developer maintaining a website on a laptop">
           <p>A website is not a one-time project — it needs to be kept updated, secure, and running smoothly over time. Dotmira GH offers maintenance support to ensure that client websites remain functional, up to date, and performing well. This includes content updates, fixing broken links, security checks, and general upkeep so the website always makes a great first impression.</p>
         </ServiceCard>
 
-        <ServiceCard icon={FileSpreadsheet} num="05" title="Excel Business Tracker">
+        <ServiceCard icon={FileSpreadsheet} num="05" title="Excel Business Tracker" image={serviceExcel} imageAlt="Small business owner reviewing an Excel tracker on a laptop">
           <p>Dotmira GH designs fully customised Microsoft Excel spreadsheets to help small businesses track their sales, customers, suppliers, inventory, and expenses — all in one organised file. No expensive software needed.</p>
           <Link to="/excel-tracker" className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline">Learn more <ArrowRight className="h-4 w-4" /></Link>
         </ServiceCard>
