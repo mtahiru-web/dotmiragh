@@ -9,7 +9,7 @@ export const Route = createFileRoute("/about")({
       { title: "About — Dotmira GH" },
       { name: "description", content: "Dotmira GH was founded by Mariam Tahiru to help small businesses in Ghana grow with affordable web services." },
       { property: "og:title", content: "About Dotmira GH" },
-      { property: "og:description", content: "Founded by Mariam Tahiru. Helping Ghanaian businesses get online — affordably and beautifully." },
+      { property: "og:description", content: "Founded by Mariam Tahiru. Helping Ghanaian businesses get online, affordably and beautifully." },
     ],
   }),
   component: AboutPage,
