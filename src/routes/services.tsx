@@ -52,17 +52,17 @@ function ServiceCard({ icon: Icon, num, title, image, imageAlt, children }: { ic
 function ServicesPage() {
   return (
     <Layout>
-      <PageHero eyebrow="Our Services" title="Everything you need to launch and grow" subtitle="From your first domain to a fully maintained website — we cover it all." />
+      <PageHero eyebrow="Our Services" title="Everything you need to launch and grow" subtitle="From your first domain to a fully maintained website: we cover it all." />
 
       <div className="mx-auto max-w-5xl px-4 sm:px-6 py-16 md:py-20 space-y-8">
         <ServiceCard icon={Globe2} num="01" title="Website Creation" image={serviceWebsite} imageAlt="Web designer building a colorful website on a laptop">
           <p>Dotmira GH designs and builds clean, professional, and mobile-friendly websites tailored to each client's business. Whether it is a simple one-page site or a multi-page business website, every build is customised to reflect the client's brand, communicate their services clearly, and attract the right customers.</p>
-          <p>The process covers everything from design and layout to content placement and publishing — so the client does not have to worry about a thing.</p>
+          <p>The process covers everything from design and layout to content placement and publishing, so the client does not have to worry about a thing.</p>
           <Link to="/contact" className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline">Request a quote <ArrowRight className="h-4 w-4" /></Link>
         </ServiceCard>
 
         <ServiceCard icon={Sparkles} num="02" title="Domain Registration" image={serviceDomain} imageAlt="Glowing connected globe representing internet domains">
-          <p>A domain name is a business's unique address on the internet — for example, <span className="text-foreground font-medium">yourbusiness.com</span>. Dotmira GH helps clients choose, register, and manage the right domain name for their business. A good domain name builds credibility, makes a business easier to find online, and gives it a professional identity.</p>
+          <p>A domain name is a business's unique address on the internet: for example, <span className="text-foreground font-medium">yourbusiness.com</span>. Dotmira GH helps clients choose, register, and manage the right domain name for their business. A good domain name builds credibility, makes a business easier to find online, and gives it a professional identity.</p>
 
           <div className="mt-6 overflow-hidden rounded-2xl border border-border">
             <div className="overflow-x-auto">
@@ -119,11 +119,11 @@ function ServicesPage() {
         </ServiceCard>
 
         <ServiceCard icon={Wrench} num="04" title="Website Maintenance" image={serviceMaintenance} imageAlt="Developer maintaining a website on a laptop">
-          <p>A website is not a one-time project — it needs to be kept updated, secure, and running smoothly over time. Dotmira GH offers maintenance support to ensure that client websites remain functional, up to date, and performing well. This includes content updates, fixing broken links, security checks, and general upkeep so the website always makes a great first impression.</p>
+          <p>A website is not a one-time project; it needs to be kept updated, secure, and running smoothly over time. Dotmira GH offers maintenance support to ensure that client websites remain functional, up to date, and performing well. This includes content updates, fixing broken links, security checks, and general upkeep so the website always makes a great first impression.</p>
         </ServiceCard>
 
         <ServiceCard icon={FileSpreadsheet} num="05" title="Excel Business Tracker" image={serviceExcel} imageAlt="Small business owner reviewing an Excel tracker on a laptop">
-          <p>Dotmira GH designs fully customised Microsoft Excel spreadsheets to help small businesses track their sales, customers, suppliers, inventory, and expenses — all in one organised file. No expensive software needed.</p>
+          <p>Dotmira GH designs fully customised Microsoft Excel spreadsheets to help small businesses track their sales, customers, suppliers, inventory, and expenses, all in one organised file. No expensive software needed.</p>
           <Link to="/excel-tracker" className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline">Learn more <ArrowRight className="h-4 w-4" /></Link>
         </ServiceCard>
       </div>

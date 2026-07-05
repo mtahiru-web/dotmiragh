@@ -9,7 +9,7 @@ export const Route = createFileRoute("/about")({
       { title: "About — Dotmira GH" },
       { name: "description", content: "Dotmira GH was founded by Mariam Tahiru to help small businesses in Ghana grow with affordable web services." },
       { property: "og:title", content: "About Dotmira GH" },
-      { property: "og:description", content: "Founded by Mariam Tahiru. Helping Ghanaian businesses get online — affordably and beautifully." },
+      { property: "og:description", content: "Founded by Mariam Tahiru. Helping Ghanaian businesses get online, affordably and beautifully." },
     ],
   }),
   component: AboutPage,
@@ -26,7 +26,7 @@ const values = [
 
 const pillars = [
   { icon: Users, title: "People First", desc: "Every client is more than a transaction. We take time to understand each business, its goals, and its story before we build." },
-  { icon: Globe2, title: "Digital Inclusion", desc: "We are passionate about bringing more Ghanaian businesses into the global digital space — particularly those left behind by cost or awareness." },
+  { icon: Globe2, title: "Digital Inclusion", desc: "We are passionate about bringing more Ghanaian businesses into the global digital space, particularly those left behind by cost or awareness." },
   { icon: Wand2, title: "Simplicity", desc: "We take the complexity out of web services. From domain registration to website launch, we make the process smooth and stress-free." },
   { icon: Sparkles, title: "Affordability Without Compromise", desc: "Affordable does not mean cheap. We offer competitive pricing while maintaining high standards of quality and professionalism." },
   { icon: BarChart3, title: "Impact-Driven Growth", desc: "Every website we build is a step toward greater visibility, more customers, and a stronger business. We measure our success by the growth of the businesses we serve." },
@@ -58,7 +58,7 @@ function AboutPage() {
           <div className="rounded-2xl p-8 text-primary-foreground" style={{ background: "var(--gradient-brand)" }}>
             <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-white/20"><Target className="h-6 w-6" /></div>
             <h3 className="mt-5 text-xl font-bold">Our Mission</h3>
-            <p className="mt-3 text-primary-foreground/90 leading-relaxed">To provide affordable, high-quality web services — including website creation, domain registration, and hosting — that give small businesses and startups the online presence they deserve.</p>
+            <p className="mt-3 text-primary-foreground/90 leading-relaxed">To provide affordable, high-quality web services, including website creation, domain registration, and hosting, that give small businesses and startups the online presence they deserve.</p>
           </div>
         </div>
       </section>
@@ -120,8 +120,8 @@ function AboutPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">Mariam Tahiru</h2>
             <p>Mariam Tahiru is the founder of Dotmira GH and a passionate advocate for small business growth and digital inclusion. She holds a BSc. in Agribusiness Management from the Kwame Nkrumah University of Science and Technology (KNUST), where she developed a strong foundation in data analysis, business operations, and supply chain management. Her professional journey has taken her through the Ministry of Food and Agriculture and the Environmental Protection Agency, where she gained hands-on experience in data tracking, reporting, stakeholder coordination, and administrative management.</p>
             <p>Beyond her professional background, Mariam is someone who genuinely believes in growth: personal growth, business growth, and the kind of growth that happens when people are given the right tools and opportunities to move forward.</p>
-            <p>Dotmira GH was born from that belief. Mariam started it after helping a friend build a website for his startup, and realised how many small businesses in Ghana were missing out on the internet simply because of cost or awareness. She knew she could change that — one website at a time.</p>
-            <p>When she is not building websites or registering domains for clients, Mariam designs Excel business trackers to help entrepreneurs manage their records properly, tutors students in Mathematics, and is working toward her ICAG accounting certification — because she believes in practising what she preaches: never stop growing.</p>
+            <p>Dotmira GH was born from that belief. Mariam started it after helping a friend build a website for his startup, and realised how many small businesses in Ghana were missing out on the internet simply because of cost or awareness. She knew she could change that, one website at a time.</p>
+            <p>When she is not building websites or registering domains for clients, Mariam designs Excel business trackers to help entrepreneurs manage their records properly, tutors students in Mathematics, and is working toward her ICAG accounting certification, because she believes in practising what she preaches: never stop growing.</p>
             <Link to="/contact" className="mt-2 inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-primary-foreground" style={{ background: "var(--gradient-brand)" }}>
               Work with us <ArrowRight className="h-4 w-4" />
             </Link>

@@ -35,7 +35,7 @@ function ExcelPage() {
     <Layout>
       <PageHero
         eyebrow="Excel Business Tracker"
-        title="Take control of your business records — the smart way"
+        title="Take control of your business records: the smart way"
         subtitle="Running a business without proper records is like driving without a dashboard. You might be moving, but you have no idea how fast, how far, or when something is about to go wrong. That is where the Dotmira GH Excel Business Tracker comes in."
       />
 
@@ -44,8 +44,8 @@ function ExcelPage() {
         <div>
           <div className="text-xs font-semibold uppercase tracking-wider text-primary">What it is</div>
           <h2 className="mt-2 text-3xl md:text-4xl font-bold">A spreadsheet built around your business</h2>
-          <p className="mt-4 text-muted-foreground leading-relaxed">The Dotmira GH Excel Business Tracker is a fully customised Microsoft Excel spreadsheet designed to help small businesses and entrepreneurs organise, monitor, and manage their business data — all in one place, without the need for expensive accounting software.</p>
-          <p className="mt-3 text-muted-foreground leading-relaxed">Each tracker is built specifically around the client's business — their products, their customers, their suppliers, and their goals. No two trackers are the same.</p>
+          <p className="mt-4 text-muted-foreground leading-relaxed">The Dotmira GH Excel Business Tracker is a fully customised Microsoft Excel spreadsheet designed to help small businesses and entrepreneurs organise, monitor, and manage their business data, all in one place, without the need for expensive accounting software.</p>
+          <p className="mt-3 text-muted-foreground leading-relaxed">Each tracker is built specifically around the client's business: their products, their customers, their suppliers, and their goals. No two trackers are the same.</p>
         </div>
         <div className="relative">
           <div className="absolute -inset-4 rounded-3xl opacity-25 blur-2xl" style={{ background: "var(--gradient-brand)" }} />
@@ -87,7 +87,7 @@ function ExcelPage() {
         <div className="rounded-2xl border border-border bg-card p-7">
           <h3 className="text-xl font-bold">Why Excel?</h3>
           <ul className="mt-4 space-y-2.5 text-sm text-muted-foreground">
-            {["No internet connection required after setup", "Compatible with any laptop or computer", "Easy to use — no technical skills needed", "Fully customised to your specific business", "One-time cost — no monthly subscriptions"].map((x) => (
+            {["No internet connection required after setup", "Compatible with any laptop or computer", "Easy to use: no technical skills needed", "Fully customised to your specific business", "One-time cost: no monthly subscriptions"].map((x) => (
               <li key={x} className="flex gap-2"><Check className="h-4 w-4 text-primary mt-0.5 shrink-0" />{x}</li>
             ))}
           </ul>
