@@ -86,9 +86,9 @@
   --brand-orange-soft: oklch(0.78 0.14 55);
   --brand-purple: oklch(0.42 0.18 300);
   --brand-purple-deep: oklch(0.32 0.16 300);
-  --gradient-brand: linear-gradient(135deg, oklch(0.68 0.18 45), oklch(0.42 0.18 300));
-  --gradient-soft: linear-gradient(135deg, oklch(0.97 0.04 60), oklch(0.95 0.05 320));
-  --shadow-soft: 0 10px 30px -12px oklch(0.42 0.18 300 / 0.18);
+  --gradient-brand: linear-gradient(135deg, oklch(0.72 0.17 55), oklch(0.62 0.2 35));
+  --gradient-soft: linear-gradient(135deg, oklch(0.97 0.04 60), oklch(0.94 0.06 50));
+  --shadow-soft: 0 10px 30px -12px oklch(0.55 0.16 40 / 0.22);
   --shadow-glow: 0 20px 50px -20px oklch(0.68 0.18 45 / 0.4);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
@@ -148,5 +148,16 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+  }
+
+  /* Brand typography: main headings in purple, subheadings in bold orange.
+     Element selectors keep low specificity so Tailwind text-* utilities
+     (e.g. text-primary-foreground on CTAs) still override where needed. */
+  h1, h2 {
+    color: var(--brand-purple);
+  }
+  h3, h4, h5, h6 {
+    color: var(--brand-orange);
+    font-weight: 700;
   }
 }
