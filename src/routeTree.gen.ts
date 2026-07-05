@@ -10,7 +10,6 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as ServicesRouteImport } from './routes/services'
-import { Route as ReviewsRouteImport } from './routes/reviews'
 import { Route as PortfolioRouteImport } from './routes/portfolio'
 import { Route as FaqRouteImport } from './routes/faq'
 import { Route as ExcelTrackerRouteImport } from './routes/excel-tracker'
@@ -21,11 +20,6 @@ import { Route as IndexRouteImport } from './routes/index'
 const ServicesRoute = ServicesRouteImport.update({
   id: '/services',
   path: '/services',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ReviewsRoute = ReviewsRouteImport.update({
-  id: '/reviews',
-  path: '/reviews',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PortfolioRoute = PortfolioRouteImport.update({
@@ -66,7 +60,6 @@ export interface FileRoutesByFullPath {
   '/excel-tracker': typeof ExcelTrackerRoute
   '/faq': typeof FaqRoute
   '/portfolio': typeof PortfolioRoute
-  '/reviews': typeof ReviewsRoute
   '/services': typeof ServicesRoute
 }
 export interface FileRoutesByTo {
@@ -76,7 +69,6 @@ export interface FileRoutesByTo {
   '/excel-tracker': typeof ExcelTrackerRoute
   '/faq': typeof FaqRoute
   '/portfolio': typeof PortfolioRoute
-  '/reviews': typeof ReviewsRoute
   '/services': typeof ServicesRoute
 }
 export interface FileRoutesById {
@@ -87,7 +79,6 @@ export interface FileRoutesById {
   '/excel-tracker': typeof ExcelTrackerRoute
   '/faq': typeof FaqRoute
   '/portfolio': typeof PortfolioRoute
-  '/reviews': typeof ReviewsRoute
   '/services': typeof ServicesRoute
 }
 export interface FileRouteTypes {
@@ -99,7 +90,6 @@ export interface FileRouteTypes {
     | '/excel-tracker'
     | '/faq'
     | '/portfolio'
-    | '/reviews'
     | '/services'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -109,7 +99,6 @@ export interface FileRouteTypes {
     | '/excel-tracker'
     | '/faq'
     | '/portfolio'
-    | '/reviews'
     | '/services'
   id:
     | '__root__'
@@ -119,7 +108,6 @@ export interface FileRouteTypes {
     | '/excel-tracker'
     | '/faq'
     | '/portfolio'
-    | '/reviews'
     | '/services'
   fileRoutesById: FileRoutesById
 }
@@ -130,7 +118,6 @@ export interface RootRouteChildren {
   ExcelTrackerRoute: typeof ExcelTrackerRoute
   FaqRoute: typeof FaqRoute
   PortfolioRoute: typeof PortfolioRoute
-  ReviewsRoute: typeof ReviewsRoute
   ServicesRoute: typeof ServicesRoute
 }
 
@@ -141,13 +128,6 @@ declare module '@tanstack/react-router' {
       path: '/services'
       fullPath: '/services'
       preLoaderRoute: typeof ServicesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/reviews': {
-      id: '/reviews'
-      path: '/reviews'
-      fullPath: '/reviews'
-      preLoaderRoute: typeof ReviewsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/portfolio': {
@@ -202,7 +182,6 @@ const rootRouteChildren: RootRouteChildren = {
   ExcelTrackerRoute: ExcelTrackerRoute,
   FaqRoute: FaqRoute,
   PortfolioRoute: PortfolioRoute,
-  ReviewsRoute: ReviewsRoute,
   ServicesRoute: ServicesRoute,
 }
 export const routeTree = rootRouteImport
