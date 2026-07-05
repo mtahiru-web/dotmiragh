@@ -48,7 +48,7 @@ function Index() {
               Getting Your <span className="bg-clip-text text-transparent" style={{ backgroundImage: "var(--gradient-brand)" }}>Business Online</span>
             </h1>
             <p className="mt-5 max-w-xl text-base md:text-lg text-muted-foreground">
-              Affordable websites, domain registration, and hosting for small businesses and startups in Ghana. We handle the tech — you focus on growing.
+              Affordable websites, domain registration, and hosting for small businesses and startups in Ghana. We handle the tech; you focus on growing.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
@@ -156,7 +156,7 @@ function Index() {
             <div className="text-xs font-semibold uppercase tracking-wider text-primary">About us</div>
             <h2 className="mt-2 text-3xl md:text-4xl font-bold">Built by someone who believes every business deserves to be seen</h2>
             <p className="mt-5 text-muted-foreground leading-relaxed">
-              Dotmira GH was founded by Mariam Tahiru to help smallholder businesses and entrepreneurs grow, reach more customers, and build a visible presence online. We bridge the gap between small businesses and the digital world — handling the tech so you can focus on your craft.
+              Dotmira GH was founded by Mariam Tahiru to help smallholder businesses and entrepreneurs grow, reach more customers, and build a visible presence online. We bridge the gap between small businesses and the digital world, handling the tech so you can focus on your craft.
             </p>
             <Link to="/about" className="mt-7 inline-flex items-center gap-2 rounded-full border border-border bg-background px-6 py-3 text-sm font-semibold hover:bg-accent transition">
               Meet the Founder <ArrowRight className="h-4 w-4" />
@@ -209,7 +209,7 @@ function Index() {
           {[1, 2, 3].map((i) => (
             <div key={i} className="rounded-2xl border border-border bg-card p-6">
               <div className="flex gap-1 text-primary">{Array.from({ length: 5 }).map((_, j) => <Star key={j} className="h-4 w-4 fill-current" />)}</div>
-              <p className="mt-4 text-sm text-muted-foreground italic">"Review coming soon — we'd love to feature your story here after we work together."</p>
+              <p className="mt-4 text-sm text-muted-foreground italic">"Review coming soon; we'd love to feature your story here after we work together."</p>
               <div className="mt-5 flex items-center gap-3">
                 <div className="h-9 w-9 rounded-full bg-accent" />
                 <div><div className="text-sm font-semibold">Your business</div><div className="text-xs text-muted-foreground">Coming soon</div></div>
