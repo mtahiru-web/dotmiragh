@@ -30,7 +30,7 @@ function ReviewsPage() {
           {placeholders.map((p, i) => (
             <div key={i} className="rounded-2xl border border-border bg-card p-6">
               <div className="flex gap-1 text-primary">{Array.from({ length: 5 }).map((_, j) => <Star key={j} className="h-4 w-4 fill-current" />)}</div>
-              <p className="mt-4 text-muted-foreground italic">"Review coming soon — we'd love to feature your story here."</p>
+              <p className="mt-4 text-muted-foreground italic">"Review coming soon; we'd love to feature your story here."</p>
               <div className="mt-6 flex items-center gap-3 pt-4 border-t border-border">
                 <div className="h-10 w-10 rounded-full" style={{ background: "var(--gradient-brand)" }} />
                 <div>
