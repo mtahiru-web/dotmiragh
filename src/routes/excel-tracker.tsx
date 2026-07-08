@@ -45,7 +45,7 @@ function ExcelPage() {
           <div className="text-xs font-semibold uppercase tracking-wider text-primary">What it is</div>
           <h2 className="mt-2 text-3xl md:text-4xl font-bold">A spreadsheet built around your business</h2>
           <p className="mt-4 text-muted-foreground leading-relaxed">The Dotmira GH Excel Business Tracker is a fully customised Microsoft Excel spreadsheet designed to help small businesses and entrepreneurs organise, monitor, and manage their business data, all in one place, without the need for expensive accounting software.</p>
-          <p className="mt-3 text-muted-foreground leading-relaxed">Each tracker is built specifically around the client's business: their products, their customers, their suppliers, and their goals. No two trackers are the same.</p>
+          <p className="mt-3 text-muted-foreground leading-relaxed">Each tracker is built specifically around the client's business: their products, their customers, their suppliers, and their goals. Every client's tracking system is unique.</p>
         </div>
         <div className="relative">
           <div className="absolute -inset-4 rounded-3xl opacity-25 blur-2xl" style={{ background: "var(--gradient-brand)" }} />
