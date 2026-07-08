@@ -10,9 +10,9 @@ import smallBizImg from "@/assets/small-business.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Dotmira GH — Getting Your Business Online" },
+      { title: "Dotmira GH - Getting Your Business Online" },
       { name: "description", content: "Affordable websites, domain registration, and hosting for small businesses and startups in Ghana." },
-      { property: "og:title", content: "Dotmira GH — Getting Your Business Online" },
+      { property: "og:title", content: "Dotmira GH - Getting Your Business Online" },
       { property: "og:description", content: "Affordable websites, domain registration, and hosting for small businesses and startups in Ghana." },
     ],
   }),

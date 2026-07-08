@@ -78,14 +78,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Dotmira GH - Getting Your Business Online" },
+      { name: "description", content: "Affordable websites, domain registration, and hosting for small businesses and startups in Ghana." },
       { name: "author", content: "Dotmira GH" },
-      { property: "og:title", content: "Dotmira GH — Getting Your Business Online" },
+      { property: "og:title", content: "Dotmira GH - Getting Your Business Online" },
       { property: "og:description", content: "Affordable websites, domain registration, and hosting for small businesses and startups in Ghana." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Dotmira GH - Getting Your Business Online" },
+      { name: "twitter:description", content: "Affordable websites, domain registration, and hosting for small businesses and startups in Ghana." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/533ae04e-baff-4625-b2b2-47af983b0c22" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/533ae04e-baff-4625-b2b2-47af983b0c22" },
     ],
     links: [
       {
