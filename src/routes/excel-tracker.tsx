@@ -25,9 +25,9 @@ const sheets = [
 ];
 
 const packages = [
-  { name: "Basic", price: "GHS 150", items: ["Sales sheet", "Customer sheet"] },
-  { name: "Standard", price: "GHS 250", items: ["Sales sheet", "Customer sheet", "Supplier sheet", "Inventory sheet"], featured: true },
-  { name: "Premium", price: "GHS 380", items: ["All sheets", "Dashboard", "Monthly Summary"] },
+  { name: "Basic", price: "Gh₵ 150", items: ["Sales sheet", "Customer sheet"] },
+  { name: "Standard", price: "Gh₵ 250", items: ["Sales sheet", "Customer sheet", "Supplier sheet", "Inventory sheet"], featured: true },
+  { name: "Premium", price: "Gh₵ 380", items: ["All sheets", "Dashboard", "Monthly Summary"] },
 ];
 
 function ExcelPage() {

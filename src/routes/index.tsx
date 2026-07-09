@@ -70,7 +70,7 @@ function Index() {
               <div className="h-8 w-px bg-border" />
               <div><span className="text-foreground font-bold text-lg">3–7</span><div>Days to launch</div></div>
               <div className="h-8 w-px bg-border" />
-              <div><span className="text-foreground font-bold text-lg">GHS</span><div>Friendly pricing</div></div>
+              <div><span className="text-foreground font-bold text-lg">Gh₵</span><div>Friendly pricing</div></div>
             </div>
           </div>
           <div className="relative">

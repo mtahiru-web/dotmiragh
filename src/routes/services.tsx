@@ -20,12 +20,12 @@ export const Route = createFileRoute("/services")({
 });
 
 const domainRows = [
-  { ext: ".com", y1: "GHS 420", y2: "GHS 580", y3: "GHS 790", tag: "Most popular" },
-  { ext: ".net", y1: "GHS 455", y2: "GHS 660", y3: "GHS 920" },
-  { ext: ".org", y1: "GHS 415", y2: "GHS 565", y3: "GHS 760" },
-  { ext: ".shop", y1: "GHS 325", y2: "GHS 355", y3: "GHS 395", tag: "Best value" },
-  { ext: ".online", y1: "GHS 325", y2: "GHS 355", y3: "GHS 395", tag: "Best value" },
-  { ext: ".store", y1: "GHS 325", y2: "GHS 355", y3: "GHS 395", tag: "Best value" },
+  { ext: ".com", y1: "Gh₵ 420", y2: "Gh₵ 580", y3: "Gh₵ 790", tag: "Most popular" },
+  { ext: ".net", y1: "Gh₵ 455", y2: "Gh₵ 660", y3: "Gh₵ 920" },
+  { ext: ".org", y1: "Gh₵ 415", y2: "Gh₵ 565", y3: "Gh₵ 760" },
+  { ext: ".shop", y1: "Gh₵ 325", y2: "Gh₵ 355", y3: "Gh₵ 395", tag: "Best value" },
+  { ext: ".online", y1: "Gh₵ 325", y2: "Gh₵ 355", y3: "Gh₵ 395", tag: "Best value" },
+  { ext: ".store", y1: "Gh₵ 325", y2: "Gh₵ 355", y3: "Gh₵ 395", tag: "Best value" },
 ];
 
 function ServiceCard({ icon: Icon, num, title, image, imageAlt, children }: { icon: any; num: string; title: string; image: string; imageAlt: string; children: React.ReactNode }) {
@@ -99,7 +99,7 @@ function ServicesPage() {
           <div className="mt-4 grid sm:grid-cols-2 gap-4">
             <div className="rounded-2xl border border-border p-5 bg-background">
               <div className="text-xs uppercase tracking-wider text-primary font-semibold">Starter</div>
-              <div className="mt-2 text-3xl font-bold text-foreground">GHS 380<span className="text-sm font-medium text-muted-foreground">/year</span></div>
+              <div className="mt-2 text-3xl font-bold text-foreground">Gh₵ 380<span className="text-sm font-medium text-muted-foreground">/year</span></div>
               <ul className="mt-4 space-y-2 text-sm">
                 <li className="flex gap-2"><Check className="h-4 w-4 text-primary shrink-0 mt-0.5" /> Reliable hosting setup</li>
                 <li className="flex gap-2"><Check className="h-4 w-4 text-primary shrink-0 mt-0.5" /> 1-year duration</li>
@@ -108,7 +108,7 @@ function ServicesPage() {
             </div>
             <div className="rounded-2xl p-5 text-primary-foreground" style={{ background: "var(--gradient-brand)" }}>
               <div className="text-xs uppercase tracking-wider text-white/80 font-semibold">Standard</div>
-              <div className="mt-2 text-3xl font-bold">GHS 520<span className="text-sm font-medium text-white/80">/year</span></div>
+              <div className="mt-2 text-3xl font-bold">Gh₵ 520<span className="text-sm font-medium text-white/80">/year</span></div>
               <ul className="mt-4 space-y-2 text-sm">
                 <li className="flex gap-2"><Check className="h-4 w-4 shrink-0 mt-0.5" /> Faster server resources</li>
                 <li className="flex gap-2"><Check className="h-4 w-4 shrink-0 mt-0.5" /> 1-year duration</li>
