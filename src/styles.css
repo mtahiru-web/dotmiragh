@@ -161,3 +161,10 @@
     font-weight: 700;
   }
 }
+
+/* Hide the "Edit with Lovable" badge on published deployments */
+#lovable-badge {
+  display: none !important;
+}
+
+
