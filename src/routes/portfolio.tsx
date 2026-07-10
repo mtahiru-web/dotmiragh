@@ -42,7 +42,7 @@ function PortfolioPage() {
             </div>
             <div className="p-6">
               <div className="text-xs text-primary font-semibold uppercase tracking-wider">Excel Business Tracker</div>
-              <h3 className="mt-1.5 font-bold text-lg">Excel Financial Tracking System</h3>
+              <h3 className="mt-1.5 font-bold text-lg">Produsell Ltd Tracking System</h3>
               <p className="mt-2 text-sm text-muted-foreground">Produsell Distribution Limited is a Kumasi-based distributor of natural and agricultural products including coconut oil, cashew nuts, roasted groundnuts, and Tom Brown. As the business grew, they needed a reliable and organised way to track their financial performance, manage stock, and monitor cash flow without expensive accounting software.</p>
               <p className="mt-2 text-sm text-muted-foreground">Dotmira GH designed and developed a comprehensive multi-sheet Excel Financial Tracking System tailored specifically to Produsell's products, suppliers, and customers. The system gives the business a full picture of its financial health in one organised file.</p>
               <ul className="mt-3 space-y-1.5 text-sm text-muted-foreground">
