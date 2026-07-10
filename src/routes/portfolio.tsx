@@ -30,7 +30,7 @@ function PortfolioPage() {
               <div className="text-xs text-primary font-semibold uppercase tracking-wider">Distribution</div>
               <h3 className="mt-1.5 font-bold text-lg">Produsell Distribution</h3>
               <p className="mt-2 text-sm text-muted-foreground">A clean, professional business website built for Produsell Distribution, a product distribution company based in Ghana.</p>
-              <a href="https://www.produselldistribution.lovable.app" target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline">
+              <a href="https://produselldistribution.lovable.app/" target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline">
                 Visit website <ExternalLink className="h-4 w-4" />
               </a>
             </div>
