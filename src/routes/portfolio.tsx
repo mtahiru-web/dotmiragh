@@ -25,14 +25,27 @@ function PortfolioPage() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           <article className="rounded-2xl overflow-hidden border border-border bg-card group">
             <div className="overflow-hidden aspect-[4/3]">
-              <img src={portfolioImg} alt="Produsell Distribution" loading="lazy" className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <img src={portfolioImg} alt="Produsell Distribution Limited website" loading="lazy" className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="p-6">
-              <div className="text-xs text-primary font-semibold uppercase tracking-wider">Distribution</div>
-              <h3 className="mt-1.5 font-bold text-lg">Produsell Distribution</h3>
-              <p className="mt-2 text-sm text-muted-foreground">A clean, professional business website built for Produsell Distribution, a product distribution company based in Ghana.</p>
+              <div className="text-xs text-primary font-semibold uppercase tracking-wider">BUSINESS WEBSITE</div>
+              <h3 className="mt-1.5 font-bold text-lg">Produsell Distribution Limited Website</h3>
+              <p className="mt-2 text-sm text-muted-foreground">Produsell Distribution Limited is a Kumasi-based distributor of natural and agricultural products including coconut oil, cashew nuts, roasted groundnuts, and Tom Brown. As the business expanded, they needed a professional online presence to showcase their products, build customer trust, and provide an easy way for customers to make inquiries and place orders.</p>
+              <p className="mt-2 text-sm text-muted-foreground">Dotmira GH designed and developed a modern, responsive business website tailored specifically to Produsell Distribution Limited's brand and product offerings. The website gives customers a seamless browsing experience while making it easy to explore products, learn about the company, and connect directly with the business through WhatsApp.</p>
+              <ul className="mt-3 space-y-1.5 text-sm text-muted-foreground">
+                <li className="flex gap-2"><Check className="h-4 w-4 text-primary mt-0.5 shrink-0" />Home page with business overview and featured products</li>
+                <li className="flex gap-2"><Check className="h-4 w-4 text-primary mt-0.5 shrink-0" />About Us page highlighting the company's story and values</li>
+                <li className="flex gap-2"><Check className="h-4 w-4 text-primary mt-0.5 shrink-0" />Products page with images and wholesale/retail pricing</li>
+                <li className="flex gap-2"><Check className="h-4 w-4 text-primary mt-0.5 shrink-0" />Customer Reviews section for testimonials</li>
+                <li className="flex gap-2"><Check className="h-4 w-4 text-primary mt-0.5 shrink-0" />Frequently Asked Questions (FAQ) page</li>
+                <li className="flex gap-2"><Check className="h-4 w-4 text-primary mt-0.5 shrink-0" />Contact page with business information</li>
+                <li className="flex gap-2"><Check className="h-4 w-4 text-primary mt-0.5 shrink-0" />Direct WhatsApp integration for inquiries and orders</li>
+                <li className="flex gap-2"><Check className="h-4 w-4 text-primary mt-0.5 shrink-0" />Responsive design optimized for desktop and mobile devices</li>
+                <li className="flex gap-2"><Check className="h-4 w-4 text-primary mt-0.5 shrink-0" />Simple, intuitive navigation for an enhanced user experience</li>
+              </ul>
+              <p className="mt-3 text-sm text-muted-foreground"><strong className="text-foreground">Outcome:</strong> The website enables Produsell Distribution Limited to showcase its products, provide customers with pricing information, receive inquiries and orders directly through WhatsApp, and establish a strong online presence that enhances customer engagement and supports business growth.</p>
               <a href="https://produselldistribution.lovable.app/" target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline">
-                Visit website <ExternalLink className="h-4 w-4" />
+                Visit Website <ExternalLink className="h-4 w-4" />
               </a>
             </div>
           </article>
