@@ -4,6 +4,7 @@ import { Layout } from "@/components/site/Layout";
 import heroImg from "@/assets/hero-laptop.jpg";
 import portraitAsset from "@/assets/mariam-portrait.jpg.asset.json";
 import portfolioImg from "@/assets/portfolio-mockup.jpg";
+import excelTrackingImg from "@/assets/excel-financial-tracking.jpg";
 import teamImg from "@/assets/team.jpg";
 import smallBizImg from "@/assets/small-business.jpg";
 
