@@ -184,18 +184,26 @@ function Index() {
                 <img src={portfolioImg} alt="Produsell Distribution website" loading="lazy" className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="p-5">
-                <div className="text-xs text-primary font-semibold">Distribution</div>
-                <h3 className="mt-1 font-semibold">Produsell Distribution</h3>
+                <div className="text-xs text-primary font-semibold">BUSINESS WEBSITE</div>
+                <h3 className="mt-1 font-semibold">Produsell Distribution Website</h3>
                 <p className="mt-1 text-sm text-muted-foreground">A clean, professional business website for a Ghana-based distribution company.</p>
               </div>
             </div>
-            {[1, 2].map((i) => (
-              <div key={i} className="rounded-2xl border border-dashed border-border bg-card/50 p-6 flex flex-col items-center justify-center text-center min-h-[260px]">
-                <Sparkles className="h-7 w-7 text-primary" />
-                <h3 className="mt-3 font-semibold">Coming soon</h3>
-                <p className="mt-1 text-sm text-muted-foreground">More projects in the works.</p>
+            <div className="rounded-2xl overflow-hidden border border-border bg-card group">
+              <div className="overflow-hidden aspect-[4/3]">
+                <img src={excelTrackingImg} alt="Produsell Ltd Tracking System" loading="lazy" className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
-            ))}
+              <div className="p-5">
+                <div className="text-xs text-primary font-semibold">Excel Business Tracker</div>
+                <h3 className="mt-1 font-semibold">Produsell Ltd Tracking System</h3>
+                <p className="mt-1 text-sm text-muted-foreground">A custom Excel financial tracking system built to manage sales, stock, and cash flow.</p>
+              </div>
+            </div>
+            <div className="rounded-2xl border border-dashed border-border bg-card/50 p-6 flex flex-col items-center justify-center text-center min-h-[260px]">
+              <Sparkles className="h-7 w-7 text-primary" />
+              <h3 className="mt-3 font-semibold">Coming soon</h3>
+              <p className="mt-1 text-sm text-muted-foreground">More projects in the works.</p>
+            </div>
           </div>
         </div>
       </section>
