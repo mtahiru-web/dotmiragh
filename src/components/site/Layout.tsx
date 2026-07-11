@@ -124,7 +124,7 @@ function Footer() {
           </p>
           <div className="mt-5 flex gap-3">
             <a href={WA_URL} aria-label="WhatsApp" target="_blank" rel="noreferrer" className="p-2 rounded-full bg-background border border-border hover:text-primary transition"><MessageCircle className="h-4 w-4" /></a>
-            <a href="#" aria-label="Instagram" className="p-2 rounded-full bg-background border border-border hover:text-primary transition"><Instagram className="h-4 w-4" /></a>
+            <a href="https://www.instagram.com/dotmiragh" aria-label="Instagram" target="_blank" rel="noreferrer" className="p-2 rounded-full bg-background border border-border hover:text-primary transition"><Instagram className="h-4 w-4" /></a>
             <a href="https://www.linkedin.com/in/mtahiru" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="p-2 rounded-full bg-background border border-border hover:text-primary transition"><Linkedin className="h-4 w-4" /></a>
             <a href="#" aria-label="Facebook" className="p-2 rounded-full bg-background border border-border hover:text-primary transition"><Facebook className="h-4 w-4" /></a>
           </div>
@@ -152,7 +152,7 @@ function Footer() {
         <div>
           <h4 className="text-sm font-semibold mb-3">Contact</h4>
           <ul className="space-y-2.5 text-sm text-muted-foreground">
-            <li className="flex items-start gap-2"><Mail className="h-4 w-4 mt-0.5 text-primary shrink-0" /><a href="mailto:marietahiru679@gmail.com" className="hover:text-primary break-all">marietahiru679@gmail.com</a></li>
+            <li className="flex items-start gap-2"><Mail className="h-4 w-4 mt-0.5 text-primary shrink-0" /><a href="mailto:dotmiragh@gmail.com" className="hover:text-primary break-all">dotmiragh@gmail.com</a></li>
             <li className="flex items-start gap-2"><Phone className="h-4 w-4 mt-0.5 text-primary shrink-0" /><a href="tel:+233272178796" className="hover:text-primary">0272178796</a></li>
             <li className="flex items-start gap-2"><MessageCircle className="h-4 w-4 mt-0.5 text-primary shrink-0" /><a href={WA_URL} target="_blank" rel="noreferrer" className="hover:text-primary">WhatsApp chat</a></li>
             <li className="flex items-start gap-2"><MapPin className="h-4 w-4 mt-0.5 text-primary shrink-0" />Accra Newtown, Ghana</li>
