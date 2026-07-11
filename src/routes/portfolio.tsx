@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Layout, PageHero } from "@/components/site/Layout";
 import { ExternalLink, Sparkles, ArrowRight, Check } from "lucide-react";
 import portfolioImg from "@/assets/portfolio-mockup.jpg";
-import excelFinancialTrackingImg from "@/assets/excel-financial-tracking.jpg";
+import excelFinancialTrackingImg from "@/assets/excel-financial-tracking-cedis.png";
 
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
