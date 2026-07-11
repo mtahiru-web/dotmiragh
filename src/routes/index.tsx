@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Globe2, Server, Wrench, FileSpreadsheet, Sparkles, HandCoins, MapPin, Star } from "lucide-react";
 import { Layout } from "@/components/site/Layout";
-import heroImg from "@/assets/hero-laptop.jpg";
+import heroAsset from "@/assets/dotmira-hero-smooth-arms.png.asset.json";
 import portraitAsset from "@/assets/mariam-portrait.jpg.asset.json";
 import portfolioImg from "@/assets/portfolio-mockup.jpg";
 import excelTrackingImg from "@/assets/excel-financial-tracking.jpg";
@@ -77,7 +77,7 @@ function Index() {
           <div className="relative">
             <div className="absolute -inset-6 rounded-3xl opacity-30 blur-2xl" style={{ background: "var(--gradient-brand)" }} />
             <img
-              src={heroImg}
+              src={heroAsset.url}
               alt="Young Ghanaian entrepreneur working on a laptop"
               width={1600}
               height={1200}
