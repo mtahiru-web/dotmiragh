@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Globe2, Server, Wrench, FileSpreadsheet, Sparkles, HandCoins, MapPin, Star } from "lucide-react";
 import { Layout } from "@/components/site/Layout";
-import heroAsset from "@/assets/dotmira-hero-smooth-arms.png.asset.json";
+import heroImg from "@/assets/hero-laptop.jpg";
 import portraitAsset from "@/assets/mariam-portrait.jpg.asset.json";
 import portfolioImg from "@/assets/portfolio-mockup.jpg";
 import excelTrackingImg from "@/assets/excel-financial-tracking.jpg";
