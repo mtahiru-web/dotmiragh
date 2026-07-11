@@ -43,7 +43,7 @@ function Index() {
           <div>
             <div className="inline-flex items-center gap-2 rounded-full bg-background/70 backdrop-blur border border-border px-4 py-1.5 text-xs font-semibold text-secondary">
               <span className="h-2 w-2 rounded-full" style={{ background: "var(--brand-orange)" }} />
-              Web · Domain · Hosting in Ghana
+              Web · Domain · Hosting Services
             </div>
             <h1 className="mt-5 text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.05]">
               Getting Your <span className="bg-clip-text text-transparent" style={{ backgroundImage: "var(--gradient-brand)" }}>Business Online</span>
