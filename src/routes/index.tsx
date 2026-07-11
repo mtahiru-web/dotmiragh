@@ -77,7 +77,7 @@ function Index() {
           <div className="relative">
             <div className="absolute -inset-6 rounded-3xl opacity-30 blur-2xl" style={{ background: "var(--gradient-brand)" }} />
             <img
-              src={heroAsset.url}
+              src={heroImg}
               alt="Young Ghanaian entrepreneur working on a laptop"
               width={1600}
               height={1200}
