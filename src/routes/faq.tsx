@@ -25,7 +25,7 @@ const faqs = [
   { q: "Can I get just a domain name without a website?", a: "Yes. Domain registration is available as a standalone service." },
   { q: "What is the Excel Business Tracker and how is it different from regular spreadsheets?", a: "The Dotmira GH Excel Business Tracker is fully customised to your specific business. Unlike generic spreadsheets, it is built around your actual products, customers, and suppliers, making it immediately useful from day one." },
   { q: "How do I pay for services?", a: "Payment details are shared upon agreement. Mobile Money and bank transfer options are available." },
-  { q: "How do I get started?", a: "Simply reach out via WhatsApp at 0272178796 or send an email to marietahiru679@gmail.com and the team will guide you through the process." },
+  { q: "How do I get started?", a: "Simply reach out via WhatsApp at 0272178796 or send an email to dotmiragh@gmail.com and the team will guide you through the process." },
 ];
 
 function FaqPage() {

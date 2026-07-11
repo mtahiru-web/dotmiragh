@@ -28,7 +28,7 @@ function ContactPage() {
     const service = fd.get("service");
     const message = fd.get("message");
     const body = encodeURIComponent(`Name: ${name}\nBusiness: ${biz}\nEmail: ${email}\nPhone: ${phone}\nService: ${service}\n\n${message}`);
-    window.location.href = `mailto:marietahiru679@gmail.com?subject=${encodeURIComponent("New enquiry from " + name)}&body=${body}`;
+    window.location.href = `mailto:dotmiragh@gmail.com?subject=${encodeURIComponent("New enquiry from " + name)}&body=${body}`;
     setSent(true);
   };
 
@@ -81,7 +81,7 @@ function ContactPage() {
         </div>
 
         <aside className="lg:col-span-2 space-y-4">
-          <ContactItem icon={Mail} label="Email" value="marietahiru679@gmail.com" href="mailto:marietahiru679@gmail.com" />
+          <ContactItem icon={Mail} label="Email" value="dotmiragh@gmail.com" href="mailto:dotmiragh@gmail.com" />
           <ContactItem icon={Phone} label="Phone" value="0272178796" href="tel:+233272178796" />
           <ContactItem icon={MessageCircle} label="WhatsApp" value="0272178796" href="https://wa.me/233272178796" />
           <ContactItem icon={MapPin} label="Location" value="Accra Newtown, Ghana" />
