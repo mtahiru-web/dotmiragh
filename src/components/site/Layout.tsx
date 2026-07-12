@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState, type ReactNode } from "react";
-import { Menu, X, Mail, Phone, MapPin, MessageCircle, Instagram, Linkedin, Facebook } from "lucide-react";
+import { Menu, X, Mail, Phone, MapPin, MessageCircle, Instagram, Linkedin } from "lucide-react";
 import logoAsset from "@/assets/dotmira-logo.png.asset.json";
 
 const NAV = [
@@ -126,7 +126,7 @@ function Footer() {
             <a href={WA_URL} aria-label="WhatsApp" target="_blank" rel="noreferrer" className="p-2 rounded-full bg-background border border-border hover:text-primary transition"><MessageCircle className="h-4 w-4" /></a>
             <a href="https://www.instagram.com/dotmiragh" aria-label="Instagram" target="_blank" rel="noreferrer" className="p-2 rounded-full bg-background border border-border hover:text-primary transition"><Instagram className="h-4 w-4" /></a>
             <a href="https://www.linkedin.com/company/dotmiragh/" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="p-2 rounded-full bg-background border border-border hover:text-primary transition"><Linkedin className="h-4 w-4" /></a>
-            <a href="#" aria-label="Facebook" className="p-2 rounded-full bg-background border border-border hover:text-primary transition"><Facebook className="h-4 w-4" /></a>
+            
           </div>
         </div>
         <div>
