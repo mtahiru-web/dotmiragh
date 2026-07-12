@@ -1,6 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Globe2, Server, Wrench, FileSpreadsheet, Sparkles, HandCoins, MapPin, Star } from "lucide-react";
+import { ArrowRight, Globe2, Server, Wrench, FileSpreadsheet, Sparkles, HandCoins, MapPin, Star, Loader2 } from "lucide-react";
+import { useQuery } from "@tanstack/react-query";
 import { Layout } from "@/components/site/Layout";
+import { supabase } from "@/integrations/supabase/client";
 import heroImg from "@/assets/hero-laptop.jpg";
 import portraitAsset from "@/assets/mariam-portrait.jpg.asset.json";
 import portfolioImg from "@/assets/portfolio-mockup.jpg";
