@@ -241,16 +241,35 @@ function Index() {
           <h2 className="mt-2 text-3xl md:text-4xl font-bold">What our clients say</h2>
         </div>
         <div className="mt-10 grid md:grid-cols-3 gap-6">
-          {[1, 2, 3].map((i) => (
-            <div key={i} className="rounded-2xl border border-border bg-card p-6">
-              <div className="flex gap-1 text-primary">{Array.from({ length: 5 }).map((_, j) => <Star key={j} className="h-4 w-4 fill-current" />)}</div>
-              <p className="mt-4 text-sm text-muted-foreground italic">"Review coming soon; we'd love to feature your story here after we work together."</p>
-              <div className="mt-5 flex items-center gap-3">
-                <div className="h-9 w-9 rounded-full bg-accent" />
-                <div><div className="text-sm font-semibold">Your business</div><div className="text-xs text-muted-foreground">Coming soon</div></div>
-              </div>
+          {isLoading ? (
+            <div className="md:col-span-3 flex items-center justify-center py-12 text-muted-foreground">
+              <Loader2 className="h-5 w-5 animate-spin" />
             </div>
-          ))}
+          ) : isError || !reviews || reviews.length === 0 ? (
+            <div className="md:col-span-3 rounded-2xl border border-dashed border-border bg-card/50 p-10 text-center text-muted-foreground">
+              No reviews yet. Be the first to share your experience.
+            </div>
+          ) : (
+            reviews.map((r) => (
+              <article key={r.id} className="rounded-2xl border border-border bg-card p-6 flex flex-col">
+                <div className="flex gap-1 text-primary">
+                  {Array.from({ length: 5 }).map((_, j) => (
+                    <Star key={j} className={`h-4 w-4 ${j < r.rating ? "fill-current" : "opacity-30"}`} />
+                  ))}
+                </div>
+                <p className="mt-4 text-sm text-muted-foreground italic flex-1">"{r.message}"</p>
+                <div className="mt-6 flex items-center gap-3 pt-4 border-t border-border">
+                  <div className="h-10 w-10 rounded-full flex items-center justify-center text-primary-foreground text-sm font-bold" style={{ background: "var(--gradient-brand)" }}>
+                    {r.name.charAt(0).toUpperCase()}
+                  </div>
+                  <div>
+                    <div className="font-semibold text-sm text-foreground">{r.name}</div>
+                    {r.business && <div className="text-xs text-muted-foreground">{r.business}</div>}
+                  </div>
+                </div>
+              </article>
+            ))
+          )}
         </div>
         <div className="text-center mt-10">
           <Link to="/reviews" className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline">Read more reviews <ArrowRight className="h-4 w-4" /></Link>
