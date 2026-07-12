@@ -35,7 +35,31 @@ const whyUs = [
   { icon: MapPin, title: "Local & Trusted", desc: "Based in Ghana, serving Ghanaian businesses with care and professionalism." },
 ];
 
+type Review = {
+  id: string;
+  name: string;
+  business: string | null;
+  rating: number;
+  message: string;
+  created_at: string;
+};
+
+async function fetchApprovedReviews(): Promise<Review[]> {
+  const { data, error } = await supabase
+    .from("reviews")
+    .select("id, name, business, rating, message, created_at")
+    .eq("approved", true)
+    .order("created_at", { ascending: false })
+    .limit(6);
+  if (error) throw error;
+  return (data ?? []) as Review[];
+}
+
 function Index() {
+  const { data: reviews, isLoading, isError } = useQuery({
+    queryKey: ["reviews", "approved", "home"],
+    queryFn: fetchApprovedReviews,
+  });
   return (
     <Layout>
       {/* HERO */}
