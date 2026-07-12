@@ -20,12 +20,12 @@ export const Route = createFileRoute("/services")({
 });
 
 const domainRows = [
-  { ext: ".com", y1: "Gh₵ 420", y2: "Gh₵ 580", y3: "Gh₵ 790", tag: "Most popular" },
-  { ext: ".net", y1: "Gh₵ 455", y2: "Gh₵ 660", y3: "Gh₵ 920" },
-  { ext: ".org", y1: "Gh₵ 415", y2: "Gh₵ 565", y3: "Gh₵ 760" },
-  { ext: ".shop", y1: "Gh₵ 325", y2: "Gh₵ 355", y3: "Gh₵ 395", tag: "Best value" },
-  { ext: ".online", y1: "Gh₵ 325", y2: "Gh₵ 355", y3: "Gh₵ 395", tag: "Best value" },
-  { ext: ".store", y1: "Gh₵ 325", y2: "Gh₵ 355", y3: "Gh₵ 395", tag: "Best value" },
+  { ext: ".com", y1: "Gh₵ 460", y2: "Gh₵ 620", y3: "Gh₵ 830", tag: "Most popular" },
+  { ext: ".net", y1: "Gh₵ 495", y2: "Gh₵ 700", y3: "Gh₵ 960" },
+  { ext: ".org", y1: "Gh₵ 455", y2: "Gh₵ 605", y3: "Gh₵ 800" },
+  { ext: ".shop", y1: "Gh₵ 365", y2: "Gh₵ 395", y3: "Gh₵ 435", tag: "Best value" },
+  { ext: ".online", y1: "Gh₵ 365", y2: "Gh₵ 395", y3: "Gh₵ 435", tag: "Best value" },
+  { ext: ".store", y1: "Gh₵ 365", y2: "Gh₵ 395", y3: "Gh₵ 435", tag: "Best value" },
 ];
 
 function ServiceCard({ icon: Icon, num, title, image, imageAlt, children }: { icon: any; num: string; title: string; image: string; imageAlt: string; children: React.ReactNode }) {
