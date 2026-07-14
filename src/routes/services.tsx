@@ -99,19 +99,19 @@ function ServicesPage() {
           <div className="mt-4 grid sm:grid-cols-2 gap-4">
             <div className="rounded-2xl border border-border p-5 bg-background">
               <div className="text-xs uppercase tracking-wider text-primary font-semibold">Starter</div>
-              <div className="mt-2 text-3xl font-bold text-foreground">Gh₵ 380<span className="text-sm font-medium text-muted-foreground">/year</span></div>
+              <div className="mt-2 text-3xl font-bold text-foreground">Gh₵ 380<span className="text-sm font-medium text-muted-foreground">/month</span></div>
               <ul className="mt-4 space-y-2 text-sm">
                 <li className="flex gap-2"><Check className="h-4 w-4 text-primary shrink-0 mt-0.5" /> Reliable hosting setup</li>
-                <li className="flex gap-2"><Check className="h-4 w-4 text-primary shrink-0 mt-0.5" /> 1-year duration</li>
+                <li className="flex gap-2"><Check className="h-4 w-4 text-primary shrink-0 mt-0.5" /> 1-month duration</li>
                 <li className="flex gap-2"><Check className="h-4 w-4 text-primary shrink-0 mt-0.5" /> SSL & basic security</li>
               </ul>
             </div>
             <div className="rounded-2xl p-5 text-primary-foreground" style={{ background: "var(--gradient-brand)" }}>
               <div className="text-xs uppercase tracking-wider text-white/80 font-semibold">Standard</div>
-              <div className="mt-2 text-3xl font-bold">Gh₵ 520<span className="text-sm font-medium text-white/80">/year</span></div>
+              <div className="mt-2 text-3xl font-bold">Gh₵ 520<span className="text-sm font-medium text-white/80">/month</span></div>
               <ul className="mt-4 space-y-2 text-sm">
                 <li className="flex gap-2"><Check className="h-4 w-4 shrink-0 mt-0.5" /> Faster server resources</li>
-                <li className="flex gap-2"><Check className="h-4 w-4 shrink-0 mt-0.5" /> 1-year duration</li>
+                <li className="flex gap-2"><Check className="h-4 w-4 shrink-0 mt-0.5" /> 1-month duration</li>
                 <li className="flex gap-2"><Check className="h-4 w-4 shrink-0 mt-0.5" /> SSL, email, daily backups</li>
               </ul>
             </div>
