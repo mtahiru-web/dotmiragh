@@ -9,6 +9,7 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as WebHostingGhanaRouteImport } from './routes/web-hosting-ghana'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as ReviewsRouteImport } from './routes/reviews'
 import { Route as PortfolioRouteImport } from './routes/portfolio'
@@ -18,6 +19,11 @@ import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
+const WebHostingGhanaRoute = WebHostingGhanaRouteImport.update({
+  id: '/web-hosting-ghana',
+  path: '/web-hosting-ghana',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ServicesRoute = ServicesRouteImport.update({
   id: '/services',
   path: '/services',
@@ -68,6 +74,7 @@ export interface FileRoutesByFullPath {
   '/portfolio': typeof PortfolioRoute
   '/reviews': typeof ReviewsRoute
   '/services': typeof ServicesRoute
+  '/web-hosting-ghana': typeof WebHostingGhanaRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -78,6 +85,7 @@ export interface FileRoutesByTo {
   '/portfolio': typeof PortfolioRoute
   '/reviews': typeof ReviewsRoute
   '/services': typeof ServicesRoute
+  '/web-hosting-ghana': typeof WebHostingGhanaRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -89,6 +97,7 @@ export interface FileRoutesById {
   '/portfolio': typeof PortfolioRoute
   '/reviews': typeof ReviewsRoute
   '/services': typeof ServicesRoute
+  '/web-hosting-ghana': typeof WebHostingGhanaRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -101,6 +110,7 @@ export interface FileRouteTypes {
     | '/portfolio'
     | '/reviews'
     | '/services'
+    | '/web-hosting-ghana'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -111,6 +121,7 @@ export interface FileRouteTypes {
     | '/portfolio'
     | '/reviews'
     | '/services'
+    | '/web-hosting-ghana'
   id:
     | '__root__'
     | '/'
@@ -121,6 +132,7 @@ export interface FileRouteTypes {
     | '/portfolio'
     | '/reviews'
     | '/services'
+    | '/web-hosting-ghana'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -132,10 +144,18 @@ export interface RootRouteChildren {
   PortfolioRoute: typeof PortfolioRoute
   ReviewsRoute: typeof ReviewsRoute
   ServicesRoute: typeof ServicesRoute
+  WebHostingGhanaRoute: typeof WebHostingGhanaRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/web-hosting-ghana': {
+      id: '/web-hosting-ghana'
+      path: '/web-hosting-ghana'
+      fullPath: '/web-hosting-ghana'
+      preLoaderRoute: typeof WebHostingGhanaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/services': {
       id: '/services'
       path: '/services'
@@ -204,6 +224,7 @@ const rootRouteChildren: RootRouteChildren = {
   PortfolioRoute: PortfolioRoute,
   ReviewsRoute: ReviewsRoute,
   ServicesRoute: ServicesRoute,
+  WebHostingGhanaRoute: WebHostingGhanaRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

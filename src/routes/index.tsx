@@ -24,10 +24,10 @@ export const Route = createFileRoute("/")({
 });
 
 const services = [
-  { icon: Globe2, title: "Website Creation", desc: "Clean, professional sites built for your brand." },
-  { icon: Sparkles, title: "Domain Registration", desc: "Claim your business's unique address online." },
-  { icon: Server, title: "Web Hosting", desc: "Fast, reliable hosting set up for you." },
-  { icon: FileSpreadsheet, title: "Excel Business Tracker", desc: "Custom spreadsheets to manage your records." },
+  { icon: Globe2, title: "Website Creation", desc: "Clean, professional sites built for your brand.", to: "/services" },
+  { icon: Sparkles, title: "Domain Registration", desc: "Claim your business's unique address online.", to: "/services" },
+  { icon: Server, title: "Web Hosting", desc: "Fast, reliable hosting set up for you.", to: "/web-hosting-ghana" },
+  { icon: FileSpreadsheet, title: "Excel Business Tracker", desc: "Custom spreadsheets to manage your records.", to: "/excel-tracker" },
 ];
 
 const whyUs = [
@@ -143,14 +143,14 @@ function Index() {
           </Link>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {services.map(({ icon: Icon, title, desc }) => (
+          {services.map(({ icon: Icon, title, desc, to }) => (
             <div key={title} className="group rounded-2xl border border-border bg-card p-6 hover:shadow-[var(--shadow-soft)] hover:-translate-y-1 transition">
               <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl text-primary-foreground" style={{ background: "var(--gradient-brand)" }}>
                 <Icon className="h-6 w-6" />
               </div>
               <h3 className="mt-4 font-semibold text-lg">{title}</h3>
               <p className="mt-1.5 text-sm text-muted-foreground">{desc}</p>
-              <Link to="/services" className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary group-hover:gap-2 transition-all">
+              <Link to={to} className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary group-hover:gap-2 transition-all">
                 Explore {title.toLowerCase()} <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
