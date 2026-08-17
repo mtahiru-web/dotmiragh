@@ -4,6 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 import { Layout } from "@/components/site/Layout";
 import { supabase } from "@/integrations/supabase/client";
 import heroImg from "@/assets/hero-laptop.jpg";
+import heroVideo from "@/assets/hero-workspace.mp4.asset.json";
 import portraitAsset from "@/assets/mariam-portrait.jpg.asset.json";
 import portfolioImg from "@/assets/portfolio-mockup.jpg";
 import excelTrackingImg from "@/assets/excel-financial-tracking-cedis.png";
@@ -63,18 +64,34 @@ function Index() {
   return (
     <Layout>
       {/* HERO */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 -z-10" style={{ background: "var(--gradient-soft)" }} />
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 py-14 md:py-24 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-          <div>
-            <div className="inline-flex items-center gap-2 rounded-full bg-background/70 backdrop-blur border border-border px-4 py-1.5 text-xs font-semibold text-secondary">
+      <section className="relative isolate overflow-hidden bg-secondary">
+        <img src={heroImg} alt="" aria-hidden="true" className="absolute inset-0 z-0 h-full w-full object-cover" />
+        <video
+          className="absolute inset-0 z-[1] h-full w-full object-cover"
+          src={heroVideo.url}
+          poster={heroImg}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          aria-hidden="true"
+          tabIndex={-1}
+        />
+        <div
+          className="absolute inset-0 z-[2]"
+          style={{ background: "linear-gradient(100deg, oklch(0.15 0.05 300 / 0.88) 0%, oklch(0.15 0.05 300 / 0.72) 45%, oklch(0.15 0.05 300 / 0.45) 100%)" }}
+        />
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 py-20 md:py-32 lg:py-40">
+          <div className="max-w-2xl">
+            <div className="inline-flex items-center gap-2 rounded-full bg-background/85 backdrop-blur border border-border px-4 py-1.5 text-xs font-semibold text-secondary">
               <span className="h-2 w-2 rounded-full" style={{ background: "var(--brand-orange)" }} />
               Web · Domain · Hosting Services
             </div>
-            <h1 className="mt-5 text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.05]">
+            <h1 className="mt-5 text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.05] !text-primary-foreground">
               Getting Your <span className="bg-clip-text text-transparent" style={{ backgroundImage: "var(--gradient-brand)" }}>Business Online</span>
             </h1>
-            <p className="mt-5 max-w-xl text-base md:text-lg text-muted-foreground">
+            <p className="mt-5 max-w-xl text-base md:text-lg text-primary-foreground/85">
               Affordable websites, domain registration, and hosting for small businesses and startups in Ghana. We handle the tech; you focus on growing.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
@@ -87,29 +104,19 @@ function Index() {
               </Link>
               <Link
                 to="/services"
-                className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold border border-border bg-background hover:bg-accent transition"
+                className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold border border-white/30 bg-background/15 text-primary-foreground backdrop-blur hover:bg-background/25 transition"
               >
                 Our Services
               </Link>
             </div>
-            <div className="mt-8 flex items-center gap-6 text-xs text-muted-foreground">
-              <div><span className="text-foreground font-bold text-lg">100%</span><div>Mobile-friendly</div></div>
-              <div className="h-8 w-px bg-border" />
-              <div><span className="text-foreground font-bold text-lg">3–7</span><div>Days to launch</div></div>
-              <div className="h-8 w-px bg-border" />
-              <div><span className="text-foreground font-bold text-lg">Gh₵</span><div>Friendly pricing</div></div>
+            <div className="mt-8 flex items-center gap-6 text-xs text-primary-foreground/75">
+              <div><span className="text-primary-foreground font-bold text-lg">100%</span><div>Mobile-friendly</div></div>
+              <div className="h-8 w-px bg-white/25" />
+              <div><span className="text-primary-foreground font-bold text-lg">3–7</span><div>Days to launch</div></div>
+              <div className="h-8 w-px bg-white/25" />
+              <div><span className="text-primary-foreground font-bold text-lg">Gh₵</span><div>Friendly pricing</div></div>
             </div>
-          </div>
-          <div className="relative">
-            <div className="absolute -inset-6 rounded-3xl opacity-30 blur-2xl" style={{ background: "var(--gradient-brand)" }} />
-            <img
-              src={heroImg}
-              alt="Young Ghanaian entrepreneur working on a laptop"
-              width={1600}
-              height={1200}
-              className="relative rounded-3xl shadow-[var(--shadow-glow)] object-cover w-full aspect-[4/3]"
-            />
-            <div className="absolute -bottom-4 -left-4 rounded-2xl bg-background border border-border shadow-lg px-4 py-3 hidden sm:flex items-center gap-3">
+            <div className="mt-8 inline-flex items-center gap-3 rounded-2xl bg-background/90 backdrop-blur border border-border shadow-lg px-4 py-3">
               <div className="flex -space-x-2">
                 {[smallBizImg, teamImg, portraitAsset.url].map((s, i) => (
                   <img key={i} src={s} alt="" className="h-8 w-8 rounded-full border-2 border-background object-cover" />
