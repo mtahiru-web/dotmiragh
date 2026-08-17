@@ -124,7 +124,7 @@ function ServicesPage() {
 
         <ServiceCard icon={FileSpreadsheet} num="05" title="Excel Business Tracker" image={serviceExcel} imageAlt="Small business owner reviewing an Excel tracker on a laptop">
           <p>Dotmira GH designs fully customised Microsoft Excel spreadsheets to help small businesses track their sales, customers, suppliers, inventory, and expenses, all in one organised file. No expensive software needed.</p>
-          <Link to="/excel-tracker" className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline">Learn more <ArrowRight className="h-4 w-4" /></Link>
+          <Link to="/excel-tracker" className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline">See Excel Business Tracker details <ArrowRight className="h-4 w-4" /></Link>
         </ServiceCard>
       </div>
 
