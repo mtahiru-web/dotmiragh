@@ -64,9 +64,10 @@ function Index() {
   return (
     <Layout>
       {/* HERO */}
-      <section className="relative overflow-hidden">
+      <section className="relative isolate overflow-hidden bg-secondary">
+        <img src={heroImg} alt="" aria-hidden="true" className="absolute inset-0 z-0 h-full w-full object-cover" />
         <video
-          className="absolute inset-0 -z-20 h-full w-full object-cover"
+          className="absolute inset-0 z-[1] h-full w-full object-cover"
           src={heroVideo.url}
           poster={heroImg}
           autoPlay
@@ -78,10 +79,10 @@ function Index() {
           tabIndex={-1}
         />
         <div
-          className="absolute inset-0 -z-10"
+          className="absolute inset-0 z-[2]"
           style={{ background: "linear-gradient(100deg, oklch(0.15 0.05 300 / 0.88) 0%, oklch(0.15 0.05 300 / 0.72) 45%, oklch(0.15 0.05 300 / 0.45) 100%)" }}
         />
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 py-20 md:py-32 lg:py-40">
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 py-20 md:py-32 lg:py-40">
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 rounded-full bg-background/85 backdrop-blur border border-border px-4 py-1.5 text-xs font-semibold text-secondary">
               <span className="h-2 w-2 rounded-full" style={{ background: "var(--brand-orange)" }} />
