@@ -116,9 +116,9 @@ function AboutPage() {
           style={{ background: "var(--brand-purple)" }}
         />
         <div className="mx-auto max-w-3xl px-4 sm:px-6 py-16 md:py-24">
-          <h2 className="text-center text-3xl md:text-4xl font-bold mb-10">
+          <h1 className="text-center text-3xl md:text-4xl font-bold mb-10">
             About Dotmira GH
-          </h2>
+          </h1>
           <div className="space-y-5 text-[15px] md:text-base text-muted-foreground leading-relaxed">
             <p>
               At Dotmira GH, we believe every business, no matter how small,
