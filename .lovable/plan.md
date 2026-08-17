@@ -16,6 +16,6 @@ Semrush (Ghana database) shows 210 monthly searches for "web hosting Ghana" with
 
 ## 3. Build an Excel expense/inventory tracking guide
 
-Your `/excel-tracker` page already gets traffic, and Semrush (US database) shows low-competition question keywords such as "how to track business expenses and income in excel" (30/mo, $6.83 CPC) and "how to track inventory for small business in excel" (20/mo, $6.87 CPC).
+Your `/excel-tracker` page already gets traffic, and Semrush shows low-competition questions like "how to track business expenses and income in excel" (30/mo, $6.83 CPC).
 
 **Next step:** Turn the existing `/excel-tracker` page into a practical guide that answers these questions and offers your custom tracker as the done-for-you solution.
