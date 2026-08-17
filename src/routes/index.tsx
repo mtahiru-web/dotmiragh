@@ -114,7 +114,7 @@ function Index() {
               <div className="h-8 w-px bg-white/25" />
               <div><span className="text-primary-foreground font-bold text-lg">1–2</span><div>weeks to launch</div></div>
               <div className="h-8 w-px bg-white/25" />
-              <div><span className="text-primary-foreground font-bold text-lg">Gh₵</span><div>Friendly pricing</div></div>
+              <div><span className="text-primary-foreground font-bold text-lg">Gh₵</span><div>Affordable pricing</div></div>
             </div>
             <div className="mt-8 inline-flex items-center gap-3 rounded-2xl bg-background/90 backdrop-blur border border-border shadow-lg px-4 py-3">
               <div className="flex -space-x-2">
