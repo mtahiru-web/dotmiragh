@@ -151,7 +151,7 @@ function Index() {
               <h3 className="mt-4 font-semibold text-lg">{title}</h3>
               <p className="mt-1.5 text-sm text-muted-foreground">{desc}</p>
               <Link to="/services" className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary group-hover:gap-2 transition-all">
-                Learn more <ArrowRight className="h-4 w-4" />
+                Explore {title.toLowerCase()} <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
           ))}
