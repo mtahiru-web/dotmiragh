@@ -26,8 +26,8 @@ const features = [
 ];
 
 const plans = [
-  { name: "Starter", price: "Gh₵ 380", period: "/month", features: ["Reliable hosting setup", "1-month duration", "SSL & basic security"] },
-  { name: "Standard", price: "Gh₵ 520", period: "/month", features: ["Faster server resources", "1-month duration", "SSL, email, daily backups"], featured: true },
+  { name: "Starter", price: "Gh₵3,600", period: "/year", features: ["SSL certificate included", "99.9% uptime", "Daily backups", "Email support"] },
+  { name: "Standard", price: "Gh₵4,800", period: "/year", features: ["Everything in Starter", "Faster server resources", "Priority support", "Monthly uptime reports"], featured: true },
 ];
 
 function WebHostingGhanaPage() {
