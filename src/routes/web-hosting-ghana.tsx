@@ -81,7 +81,7 @@ function WebHostingGhanaPage() {
         <div className="mt-10 grid md:grid-cols-2 gap-5 max-w-3xl mx-auto">
           {plans.map((p) => (
             <div key={p.name} className={`rounded-2xl p-7 border ${p.featured ? "border-transparent text-primary-foreground" : "border-border bg-card"}`} style={p.featured ? { background: "var(--gradient-brand)" } : undefined}>
-              {p.featured && <div className="text-xs font-semibold uppercase tracking-wider mb-2 opacity-90">Most popular</div>}
+              {p.featured && <div className="text-xs font-semibold uppercase tracking-wider mb-2 opacity-90">Best Value</div>}
               <div className="text-sm font-semibold uppercase tracking-wider">{p.name}</div>
               <div className={`mt-2 text-4xl font-bold ${p.featured ? "" : "text-foreground"}`}>{p.price}<span className="text-sm font-medium opacity-80">{p.period}</span></div>
               <ul className="mt-5 space-y-2 text-sm">
