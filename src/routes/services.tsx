@@ -99,20 +99,23 @@ function ServicesPage() {
           <div className="mt-4 grid sm:grid-cols-2 gap-4">
             <div className="rounded-2xl border border-border p-5 bg-background">
               <div className="text-xs uppercase tracking-wider text-primary font-semibold">Starter</div>
-              <div className="mt-2 text-3xl font-bold text-foreground">Gh₵ 380<span className="text-sm font-medium text-muted-foreground">/month</span></div>
+              <div className="mt-2 text-3xl font-bold text-foreground">Gh₵3,600<span className="text-sm font-medium text-muted-foreground">/year</span></div>
               <ul className="mt-4 space-y-2 text-sm">
-                <li className="flex gap-2"><Check className="h-4 w-4 text-primary shrink-0 mt-0.5" /> Reliable hosting setup</li>
-                <li className="flex gap-2"><Check className="h-4 w-4 text-primary shrink-0 mt-0.5" /> 1-month duration</li>
-                <li className="flex gap-2"><Check className="h-4 w-4 text-primary shrink-0 mt-0.5" /> SSL & basic security</li>
+                <li className="flex gap-2"><Check className="h-4 w-4 text-primary shrink-0 mt-0.5" /> SSL certificate included</li>
+                <li className="flex gap-2"><Check className="h-4 w-4 text-primary shrink-0 mt-0.5" /> 99.9% uptime</li>
+                <li className="flex gap-2"><Check className="h-4 w-4 text-primary shrink-0 mt-0.5" /> Daily backups</li>
+                <li className="flex gap-2"><Check className="h-4 w-4 text-primary shrink-0 mt-0.5" /> Email support</li>
               </ul>
             </div>
-            <div className="rounded-2xl p-5 text-primary-foreground" style={{ background: "var(--gradient-brand)" }}>
+            <div className="relative rounded-2xl p-5 text-primary-foreground" style={{ background: "var(--gradient-brand)" }}>
+              <div className="absolute top-4 right-4 inline-block rounded-full bg-background px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-primary">Best Value</div>
               <div className="text-xs uppercase tracking-wider text-white/80 font-semibold">Standard</div>
-              <div className="mt-2 text-3xl font-bold">Gh₵ 520<span className="text-sm font-medium text-white/80">/month</span></div>
+              <div className="mt-2 text-3xl font-bold">Gh₵4,800<span className="text-sm font-medium text-white/80">/year</span></div>
               <ul className="mt-4 space-y-2 text-sm">
+                <li className="flex gap-2"><Check className="h-4 w-4 shrink-0 mt-0.5" /> Everything in Starter</li>
                 <li className="flex gap-2"><Check className="h-4 w-4 shrink-0 mt-0.5" /> Faster server resources</li>
-                <li className="flex gap-2"><Check className="h-4 w-4 shrink-0 mt-0.5" /> 1-month duration</li>
-                <li className="flex gap-2"><Check className="h-4 w-4 shrink-0 mt-0.5" /> SSL, email, daily backups</li>
+                <li className="flex gap-2"><Check className="h-4 w-4 shrink-0 mt-0.5" /> Priority support</li>
+                <li className="flex gap-2"><Check className="h-4 w-4 shrink-0 mt-0.5" /> Monthly uptime reports</li>
               </ul>
             </div>
           </div>
