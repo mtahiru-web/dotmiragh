@@ -63,6 +63,7 @@ function ServicesPage() {
 
         <ServiceCard icon={Sparkles} num="02" title="Domain Registration" image={serviceDomain} imageAlt="Glowing connected globe representing internet domains">
           <p>A domain name is a business's unique address on the internet: for example, <span className="text-foreground font-medium">yourbusiness.com</span>. Dotmira GH helps clients choose, register, and manage the right domain name for their business. A good domain name builds credibility, makes a business easier to find online, and gives it a professional identity.</p>
+          <Link to="/contact" className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline">Request a quote <ArrowRight className="h-4 w-4" /></Link>
 
           <div className="mt-6 overflow-hidden rounded-2xl border border-border">
             <div className="overflow-x-auto">
@@ -124,6 +125,7 @@ function ServicesPage() {
 
         <ServiceCard icon={Wrench} num="04" title="Website Maintenance" image={serviceMaintenance} imageAlt="Developer maintaining a website on a laptop">
           <p>A website is not a one-time project; it needs to be kept updated, secure, and running smoothly over time. Dotmira GH offers maintenance support to ensure that client websites remain functional, up to date, and performing well. This includes content updates, fixing broken links, security checks, and general upkeep so the website always makes a great first impression.</p>
+          <Link to="/contact" className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline">Request a quote <ArrowRight className="h-4 w-4" /></Link>
         </ServiceCard>
 
         <ServiceCard icon={FileSpreadsheet} num="05" title="Excel Business Tracker" image={serviceExcel} imageAlt="Small business owner reviewing an Excel tracker on a laptop">
