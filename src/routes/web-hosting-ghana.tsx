@@ -7,7 +7,7 @@ export const Route = createFileRoute("/web-hosting-ghana")({
   head: () => ({
     meta: [
       { title: "Web Hosting Ghana — Fast, Reliable Hosting for Small Businesses" },
-      { name: "description", content: "Affordable web hosting in Ghana for small businesses and startups. Reliable servers, SSL, email, and local support from Dotmira GH." },
+      { name: "description", content: "Affordable web hosting for small businesses and startups. Reliable servers, SSL, email, and local support from Dotmira GH." },
       { property: "og:title", content: "Web Hosting Ghana — Dotmira GH" },
       { property: "og:description", content: "Fast, reliable web hosting for Ghanaian businesses." },
       { property: "og:type", content: "website" },
@@ -41,7 +41,7 @@ function WebHostingGhanaPage() {
 
       <section className="mx-auto max-w-6xl px-4 sm:px-6 py-16 md:py-20 grid lg:grid-cols-2 gap-10 items-center">
         <div>
-          <h2 className="text-3xl md:text-4xl font-bold">Why your business needs hosting in Ghana</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Why your business needs web hosting</h2>
           <p className="mt-4 text-muted-foreground leading-relaxed">
             Web hosting is what makes your website visible on the internet. Without it, your domain name and website files have nowhere to live. For small businesses in Ghana, choosing the right hosting means faster load times for local visitors, reliable uptime, and support from a team that understands the market.
           </p>
