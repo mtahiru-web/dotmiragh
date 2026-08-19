@@ -94,8 +94,8 @@ function ServicesPage() {
           <p className="text-xs">All domains include free privacy protection and a free coming-soon page.</p>
         </ServiceCard>
 
-        <ServiceCard icon={Server} num="03" title="Web Hosting in Ghana" image={serviceHosting} imageAlt="Modern server room with warm purple and orange lighting">
-          <p>Web hosting is the service that makes a website accessible on the internet. Think of it as renting space on a server where all the website's files, images, and content are stored. Without hosting, a website cannot be seen online. Dotmira GH sets up reliable, fast, and secure web hosting in Ghana for every client's website and handles the technical configuration so the client's site is live and running without any hassle.</p>
+        <ServiceCard icon={Server} num="03" title="Web Hosting" image={serviceHosting} imageAlt="Modern server room with warm purple and orange lighting">
+          <p>Web hosting is the service that makes a website accessible on the internet. Think of it as renting space on a server where all the website's files, images, and content are stored. Without hosting, a website cannot be seen online. Dotmira GH sets up reliable, fast, and secure web hosting for every client's website and handles the technical configuration so the client's site is live and running without any hassle.</p>
           <div className="mt-4 grid sm:grid-cols-2 gap-4">
             <div className="rounded-2xl border border-border p-5 bg-background">
               <div className="text-xs uppercase tracking-wider text-primary font-semibold">Starter</div>
@@ -119,7 +119,7 @@ function ServicesPage() {
               </ul>
             </div>
           </div>
-          <Link to="/web-hosting-ghana" className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline">Learn more about web hosting in Ghana <ArrowRight className="h-4 w-4" /></Link>
+          <Link to="/web-hosting-ghana" className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline">Learn more about web hosting <ArrowRight className="h-4 w-4" /></Link>
         </ServiceCard>
 
         <ServiceCard icon={Wrench} num="04" title="Website Maintenance" image={serviceMaintenance} imageAlt="Developer maintaining a website on a laptop">
