@@ -26,8 +26,8 @@ const features = [
 ];
 
 const plans = [
-  { name: "Starter", price: "Gh₵ 380", period: "/month", features: ["Reliable hosting setup", "1-month duration", "SSL & basic security"] },
-  { name: "Standard", price: "Gh₵ 520", period: "/month", features: ["Faster server resources", "1-month duration", "SSL, email, daily backups"], featured: true },
+  { name: "Starter", price: "Gh₵3,600", period: "/year", features: ["SSL certificate included", "99.9% uptime", "Daily backups", "Email support"] },
+  { name: "Standard", price: "Gh₵4,800", period: "/year", features: ["Everything in Starter", "Faster server resources", "Priority support", "Monthly uptime reports"], featured: true },
 ];
 
 function WebHostingGhanaPage() {
@@ -81,7 +81,7 @@ function WebHostingGhanaPage() {
         <div className="mt-10 grid md:grid-cols-2 gap-5 max-w-3xl mx-auto">
           {plans.map((p) => (
             <div key={p.name} className={`rounded-2xl p-7 border ${p.featured ? "border-transparent text-primary-foreground" : "border-border bg-card"}`} style={p.featured ? { background: "var(--gradient-brand)" } : undefined}>
-              {p.featured && <div className="text-xs font-semibold uppercase tracking-wider mb-2 opacity-90">Most popular</div>}
+              {p.featured && <div className="text-xs font-semibold uppercase tracking-wider mb-2 opacity-90">Best Value</div>}
               <div className="text-sm font-semibold uppercase tracking-wider">{p.name}</div>
               <div className={`mt-2 text-4xl font-bold ${p.featured ? "" : "text-foreground"}`}>{p.price}<span className="text-sm font-medium opacity-80">{p.period}</span></div>
               <ul className="mt-5 space-y-2 text-sm">
