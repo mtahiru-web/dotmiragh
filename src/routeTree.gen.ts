@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as WebHostingGhanaRouteImport } from './routes/web-hosting-ghana'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as ReviewsRouteImport } from './routes/reviews'
+import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as PortfolioRouteImport } from './routes/portfolio'
 import { Route as FaqRouteImport } from './routes/faq'
 import { Route as ExcelTrackerRouteImport } from './routes/excel-tracker'
@@ -32,6 +33,11 @@ const ServicesRoute = ServicesRouteImport.update({
 const ReviewsRoute = ReviewsRouteImport.update({
   id: '/reviews',
   path: '/reviews',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PricingRoute = PricingRouteImport.update({
+  id: '/pricing',
+  path: '/pricing',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PortfolioRoute = PortfolioRouteImport.update({
@@ -72,6 +78,7 @@ export interface FileRoutesByFullPath {
   '/excel-tracker': typeof ExcelTrackerRoute
   '/faq': typeof FaqRoute
   '/portfolio': typeof PortfolioRoute
+  '/pricing': typeof PricingRoute
   '/reviews': typeof ReviewsRoute
   '/services': typeof ServicesRoute
   '/web-hosting-ghana': typeof WebHostingGhanaRoute
@@ -83,6 +90,7 @@ export interface FileRoutesByTo {
   '/excel-tracker': typeof ExcelTrackerRoute
   '/faq': typeof FaqRoute
   '/portfolio': typeof PortfolioRoute
+  '/pricing': typeof PricingRoute
   '/reviews': typeof ReviewsRoute
   '/services': typeof ServicesRoute
   '/web-hosting-ghana': typeof WebHostingGhanaRoute
@@ -95,6 +103,7 @@ export interface FileRoutesById {
   '/excel-tracker': typeof ExcelTrackerRoute
   '/faq': typeof FaqRoute
   '/portfolio': typeof PortfolioRoute
+  '/pricing': typeof PricingRoute
   '/reviews': typeof ReviewsRoute
   '/services': typeof ServicesRoute
   '/web-hosting-ghana': typeof WebHostingGhanaRoute
@@ -108,6 +117,7 @@ export interface FileRouteTypes {
     | '/excel-tracker'
     | '/faq'
     | '/portfolio'
+    | '/pricing'
     | '/reviews'
     | '/services'
     | '/web-hosting-ghana'
@@ -119,6 +129,7 @@ export interface FileRouteTypes {
     | '/excel-tracker'
     | '/faq'
     | '/portfolio'
+    | '/pricing'
     | '/reviews'
     | '/services'
     | '/web-hosting-ghana'
@@ -130,6 +141,7 @@ export interface FileRouteTypes {
     | '/excel-tracker'
     | '/faq'
     | '/portfolio'
+    | '/pricing'
     | '/reviews'
     | '/services'
     | '/web-hosting-ghana'
@@ -142,6 +154,7 @@ export interface RootRouteChildren {
   ExcelTrackerRoute: typeof ExcelTrackerRoute
   FaqRoute: typeof FaqRoute
   PortfolioRoute: typeof PortfolioRoute
+  PricingRoute: typeof PricingRoute
   ReviewsRoute: typeof ReviewsRoute
   ServicesRoute: typeof ServicesRoute
   WebHostingGhanaRoute: typeof WebHostingGhanaRoute
@@ -168,6 +181,13 @@ declare module '@tanstack/react-router' {
       path: '/reviews'
       fullPath: '/reviews'
       preLoaderRoute: typeof ReviewsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pricing': {
+      id: '/pricing'
+      path: '/pricing'
+      fullPath: '/pricing'
+      preLoaderRoute: typeof PricingRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/portfolio': {
@@ -222,6 +242,7 @@ const rootRouteChildren: RootRouteChildren = {
   ExcelTrackerRoute: ExcelTrackerRoute,
   FaqRoute: FaqRoute,
   PortfolioRoute: PortfolioRoute,
+  PricingRoute: PricingRoute,
   ReviewsRoute: ReviewsRoute,
   ServicesRoute: ServicesRoute,
   WebHostingGhanaRoute: WebHostingGhanaRoute,
