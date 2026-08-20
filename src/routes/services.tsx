@@ -60,7 +60,7 @@ function ServicesPage() {
           <p>The process covers everything from design and layout to content placement and publishing, so the client does not have to worry about a thing.</p>
           <div className="flex flex-wrap items-center gap-4">
             <Link to="/contact" className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline">Request a quote <ArrowRight className="h-4 w-4" /></Link>
-            <Link to="/pricing#website-creation" className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline">See pricing <ArrowRight className="h-4 w-4" /></Link>
+            <Link to="/pricing" hash="website-creation" className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline">See pricing <ArrowRight className="h-4 w-4" /></Link>
           </div>
         </ServiceCard>
 
@@ -130,7 +130,7 @@ function ServicesPage() {
           <p>A website is not a one-time project; it needs to be kept updated, secure, and running smoothly over time. Dotmira GH offers maintenance support to ensure that client websites remain functional, up to date, and performing well. This includes content updates, fixing broken links, security checks, and general upkeep so the website always makes a great first impression.</p>
           <div className="flex flex-wrap items-center gap-4">
             <Link to="/contact" className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline">Request a quote <ArrowRight className="h-4 w-4" /></Link>
-            <Link to="/pricing#maintenance" className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline">See pricing <ArrowRight className="h-4 w-4" /></Link>
+            <Link to="/pricing" hash="maintenance" className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline">See pricing <ArrowRight className="h-4 w-4" /></Link>
           </div>
         </ServiceCard>
 
