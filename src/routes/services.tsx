@@ -5,7 +5,7 @@ import serviceWebsiteAsset from "@/assets/service-domain-registration.jpeg.asset
 import serviceDomain from "@/assets/service-domain.jpg";
 import serviceHosting from "@/assets/service-hosting.jpg";
 import serviceMaintenance from "@/assets/service-maintenance.jpg";
-import serviceExcel from "@/assets/service-excel.jpg";
+import serviceExcelAsset from "@/assets/service-excel-business-tracker.jpeg.asset.json";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
@@ -134,7 +134,7 @@ function ServicesPage() {
           </div>
         </ServiceCard>
 
-        <ServiceCard icon={FileSpreadsheet} num="05" title="Excel Business Tracker" image={serviceExcel} imageAlt="Small business owner reviewing an Excel tracker on a laptop">
+        <ServiceCard icon={FileSpreadsheet} num="05" title="Excel Business Tracker" image={serviceExcelAsset.url} imageAlt="Business owner working on a laptop at an organised desk">
           <p>Dotmira GH designs fully customised Microsoft Excel spreadsheets to help small businesses track their sales, customers, suppliers, inventory, and expenses, all in one organised file. No expensive software needed.</p>
           <Link to="/excel-tracker" className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline">See Excel Business Tracker details <ArrowRight className="h-4 w-4" /></Link>
         </ServiceCard>
